@@ -1,11 +1,11 @@
-resolver: lts-14.20
+resolver:
+  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/31.yaml
 packages:
 - '.'
 extra-deps:
-- svgcairo-0.13.2.1
-- cairo-0.13.6.0
-- gtk3-0.15.4
-- gio-0.13.8.0
-- glib-0.13.8.0
+- cairo-0.13.8.1
+- gtk3-0.15.5
+- gio-0.13.8.1
+- glib-0.13.8.1
 - gtk2hs-buildtools-0.13.8.0
-- pango-0.13.8.0
+- pango-0.13.8.1
