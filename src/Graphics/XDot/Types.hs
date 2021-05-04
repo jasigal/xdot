@@ -29,7 +29,7 @@ type Rectangle = (Double, Double, Double, Double)
 data Alignment = LeftAlign
                | CenterAlign
                | RightAlign
-               deriving (Show, Generic, NFData)
+               deriving (Show, Eq, Generic, NFData)
 
 -- | An object an operation can belong to.
 data Object n = None
@@ -50,4 +50,4 @@ data Operation = Ellipse { xy :: Point, w :: Double, h :: Double, filled :: Bool
                | Font { size :: Double, name :: String }
                | Style { style :: String } -- TODO: Add type
                | Image { xy :: Point, w :: Double, h :: Double, name :: String }
-               deriving (Show, Generic, NFData)
+               deriving (Show, Eq, Generic, NFData)
